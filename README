@@ -1,0 +1,11 @@
+
+This program will run tasks on databases. Its mainly intended for importing db
+backups into other databases via cron.
+
+HINTS:
+
+Be aware that having several backups with the same database name and using *
+as the source_host entry in the tasks table will result in double imports.
+
+Make sure that you have use <dbname> in your prerun/postrun SQL scripts or
+they will fail.
